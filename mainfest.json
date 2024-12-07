@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3
+  "name": "timepast"
+  "description": "Get Quick Google Calendar Analysis/Summary"
+  "version": "1.0"
+
+  "action": {
+    "default_popup": "timepast.html"
+    "default_icon": "timepast.png"
+  }
+}
