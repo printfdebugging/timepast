@@ -1,16 +1,54 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>TimePast</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Get Quick Google Calendar Analysis/Summary">
-    <meta name="author" content="Sahil Gautam">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/style.css">
-    <script src="/scripts/oauth.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Time Past</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="/style/style.css" rel="stylesheet">
   </head>
   <body>
-    <h1>Hello Extension</h1>
-    <button>FriendBlock Contacts</button>
-    <div id="friendDiv"></div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/scripts/authorize.js"></script>
+    <script src="/scripts/charts.js"></script>
+    <div class="page">
+
+      <div class="agenda">Chapter 0</div>
+      <div class="title">Time Past</div>
+      <div class="brief">Know where your time goes...</div>
+
+      <h1>Weekly Report</h1>
+      <div class="date-picker">
+        <label for="weeklyDatePicker">Select Week: </label>
+        <input type="date" id="weeklyDatePicker" />
+      </div>
+      <div class="charts-container" id="weeklyReportChart"></div>
+      <div class="scrollable-listbox">
+        <ul id="weekly-report">
+        </ul>
+      </div>
+
+      <h1>Monthly Report</h1>
+      <div class="date-picker">
+        <label for="monthlyDatePicker">Select Month: </label>
+        <input type="date" id="monthlyDatePicker" />
+      </div>
+      <div class="charts-container" id="monthlyReportChart"></div>
+      <div class="scrollable-listbox">
+        <ul id="monthly-report">
+        </ul>
+      </div>
+
+      <h1>Annual Report</h1>
+      <div class="date-picker">
+        <label for="annualDatePicker">Select Year: </label>
+        <input type="date" id="annualDatePicker" />
+      </div>
+      <div class="charts-container" id="annualReportChart"></div>
+      <div class="scrollable-listbox">
+        <ul id="annual-report">
+        </ul>
+      </div>
+    </div>
   </body>
 </html>

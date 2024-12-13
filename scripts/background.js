@@ -1,9 +1,5 @@
-chrome.runtime.onInstalled.addListener(() => {
-  chrome.action.setBadgeText({
-    text: "OFF",
-  });
-});
-
-chrome.action.onClicked.addListener(tab => {
-  chrome.tabs.create({url: "source/index.html"});
-});
+browser.browserAction.onClicked.addListener(() => {
+    browser.tabs.create({
+        url: "/source/index.html"
+    })
+})
