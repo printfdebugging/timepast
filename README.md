@@ -1,17 +1,13 @@
 # TimePast
 
-A simple firefox extension which helps you look at your google calendar from a different perspective.
-Well.. how many hours am I working, how much time goes to sports and fittness. What's the trend over
-the last year? Am I sleeping more, or am I neglecting my health.
+A simple  firefox extension which  helps you look at  your google calendar  from a
+different perspective. Well.. how  many hours am I working, how  much time goes to
+sports and fittness. What's  the trend over the last year? Am  I sleeping more, or
+am I neglecting my health.
 
-### LSP completions for chrome-types
+![banner](./assets/20241213_173246.png)
 
-I use neovim, so will be documenting for that. 
-  - get typescript-language-server up and running by using `mason` and `nvim-lspconfig`.
-  - have some completion popup framework like `nvim-cmp`.
-  - then download the chrome types npm package using `npm install --save-dev @types/chrome`.
-
-That's all! As soon as I did that, I started getting autocompletion suggestions for chrome types.
+## Development
 
 ### LSP completions on firefox
 
@@ -23,7 +19,7 @@ will start providing completions like `browser.browserAction.onClicked...`.
 {"typeAcquisition": {"include": ["firefox-webext-browser"]}}
 ```
 
-### Moving to firefox
+### Chromium to Firefox
 
 I was having a hard time setting up extension ID and OAuth2 on chromium. I was getting a wierd error
 (`Unchecked runtime.lastError: The user turned off browser signin`) probably because chromium doesn't
@@ -66,15 +62,16 @@ things start clicking. *It's important to not have unrealistic expectations when
 These  are really  quick tutorials/primers  which go  over varous  aspects of  the
 language  like basic  syntax, networking  (request/response), async/await/promises
 etc.
-https://medium.com/weekly-webtips/javascript-the-survival-guide-41799d01d565
-https://www.cs.cmu.edu/~aldrich/courses/17-396/js/
-https://kinsta.com/knowledgebase/javascript-http-request/
-https://developer.mozilla.org/en-US/docs/Web/API/Request
-https://www.sitepoint.com/javascript-async-await/
-https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world
-https://developer.chrome.com/docs/extensions/get-started/tutorial/scripts-on-every-tab
-https://developer.chrome.com/docs/extensions/get-started/tutorial/scripts-activetab
-https://developer.chrome.com/docs/extensions/get-started/tutorial/popup-tabs-manager
-https://developer.chrome.com/docs/extensions/how-to/integrate/oauth
-https://stackoverflow.com/questions/74440654/how-to-write-events-to-google-calendar-in-chrome-extension
-https://developer.chrome.com/docs/webstore/publish
+
+- https://medium.com/weekly-webtips/javascript-the-survival-guide-41799d01d565
+- https://www.cs.cmu.edu/~aldrich/courses/17-396/js/
+- https://kinsta.com/knowledgebase/javascript-http-request/
+- https://developer.mozilla.org/en-US/docs/Web/API/Request
+- https://www.sitepoint.com/javascript-async-await/
+- https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world
+- https://developer.chrome.com/docs/extensions/get-started/tutorial/scripts-on-every-tab
+- https://developer.chrome.com/docs/extensions/get-started/tutorial/scripts-activetab
+- https://developer.chrome.com/docs/extensions/get-started/tutorial/popup-tabs-manager
+- https://developer.chrome.com/docs/extensions/how-to/integrate/oauth
+- https://stackoverflow.com/questions/74440654/how-to-write-events-to-google-calendar-in-chrome-extension
+- https://developer.chrome.com/docs/webstore/publish
